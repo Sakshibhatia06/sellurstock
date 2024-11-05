@@ -86,7 +86,8 @@
                         <div class="container">
                             <div class="row justify-content-end">
                                 <div class="col-lg-8">
-                                    <h1 class="display-1 mb-4 animated slideInDown">Your Financial Status Is Our Goal</h1>
+                                    <h1 class="mb-4 animated slideInDown">WANT IMMEDIATE DEAL FOR YOUR STOCK WHICH IS DEAD, SLOW or NON MOVING?</h1>
+                                    <p class="mb-4 animated slideInDown">Then you are the right place!!</p>
                                 </div>
                             </div>
                         </div>
@@ -98,7 +99,8 @@
                         <div class="container">
                             <div class="row justify-content-end">
                                 <div class="col-lg-7">
-                                    <h1 class="display-1 mb-4 animated slideInDown">True Financial Support For You</h1>
+                                    <h1 class="mb-4 animated slideInDown">WANT IMMEDIATE ADVANCE PAYMENT FOR SUCH STOCKS?</h1>
+                                    <p class="mb-4 animated slideInDown">Then you are the right place!!</p>
                                 </div>
                             </div>
                         </div>
@@ -116,6 +118,40 @@
         </div>
     </div>
     <!-- Carousel End -->
+     <!-- Add Product Button -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal">
+    Add Product
+</button>
+<!-- Product Submission Modal -->
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel">Submit a Product</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="productForm" action="send_email.php" method="POST" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="productTitle" class="form-label">Product Title</label>
+                        <input type="text" class="form-control" id="productTitle" name="productTitle" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="productImage" class="form-label">Product Image</label>
+                        <input type="file" class="form-control" id="productImage" name="productImage" accept="image/*" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="productDescription" class="form-label">Product Description</label>
+                        <textarea class="form-control" id="productDescription" name="productDescription" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Product</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
 
 
     <!-- About Start -->
