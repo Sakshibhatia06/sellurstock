@@ -5,7 +5,15 @@
     --light: #150908;
     --dark: #410101;
 }
-
+.btn-primary1{
+    background-color: #FFFFFF;
+    border: #FFFFFF;
+    padding: 0;
+}
+.btn-primary1:hover{
+    background-color: #FFFFFF;
+    color: #E93C05;
+}
 .back-to-top {
     position: fixed;
     display: none;
