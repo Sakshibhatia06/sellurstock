@@ -57,7 +57,7 @@
                 <a class="nav-item nav-link"><button type="button" class="btn-primary1" data-bs-toggle="modal"
                         data-bs-target="#productModal">Add Products</button></a>
                 <a href="products.html" class="nav-item nav-link">Products</a>
-                <a href="#contact" class="nav-item nav-link">Contact Us</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
             <div class="d-none d-lg-flex ms-2">
                 <a class="btn btn-light btn-sm-square rounded-circle ms-3" target="_blank"
@@ -87,11 +87,11 @@
                     <img class="w-100" src="./img/pexels-tiger-lily-4481258.jpg" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
-                            <div class="row justify-content-start">
+                            <div class="row justify-content-end">
                                 <div class="col-lg-8">
                                     <h1 class="mb-4 animated slideInDown">WANT IMMEDIATE DEAL FOR YOUR STOCK WHICH IS
                                         DEAD, SLOW or NON MOVING?</h1>
-                                    <p class="mb-4 animated slideInDown">Then you are the right place!!</p>
+                                    <h4 class="mb-4 animated slideInDown">Then you are the right place!!</>
                                 </div>
                             </div>
                         </div>
@@ -101,10 +101,11 @@
                     <img class="w-100" src="./img/pexels-alexander-isreb-880417-1797428.jpg" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
-                            <div class="row justify-content-end">
+                            <div class="row justify-content-start">
                                 <div class="col-lg-7">
-                                    <h1 class="mb-4 animated slideInDown">WANT IMMEDIATE ADVANCE PAYMENT FOR DEAD, SLOW or NON MOVING?</h1>
-                                    <p class="mb-4 animated slideInDown">Then you are the right place!!</p>
+                                    <h1 class="mb-4 animated slideInDown">WANT IMMEDIATE ADVANCE PAYMENT FOR SUCH
+                                        STOCKS?</h1>
+                                    <h4 class="mb-4 animated slideInDown">Then you are the right place!!</p>
                                 </div>
                             </div>
                         </div>
@@ -132,20 +133,35 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form id="productForm" action="send_email.php" method="POST" enctype="multipart/form-data">
+                    <form id="productForm" action="https://formsubmit.co/info@tspglobal.com" method="POST" enctype="multipart/form-data">
                         <div class="mb-3">
-                            <label for="productTitle" class="form-label">Product Title</label>
+                            <label for="Company Name" class="form-label">Company Name</label>
                             <input type="text" class="form-control" id="productTitle" name="productTitle" required>
                         </div>
                         <div class="mb-3">
-                            <label for="productImage" class="form-label">Product Image</label>
-                            <input type="file" class="form-control" id="productImage" name="productImage"
-                                accept="image/*" required>
+                            <label for="productTitle" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="productTitle" name="productTitle" required>
                         </div>
                         <div class="mb-3">
-                            <label for="productDescription" class="form-label">Product Description</label>
+                            <label for="productTitle" class="form-label">Email Id</label>
+                            <input type="email" class="form-control" id="productTitle" name="productTitle" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="productTitle" class="form-label">Phone Number</label>
+                            <input type="phone" class="form-control" id="productTitle" name="productTitle" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="productTitle" class="form-label">Your Designation in the Company</label>
+                            <input type="text" class="form-control" id="productTitle" name="productTitle" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="productDescription" class="form-label">Stock Description</label>
                             <textarea class="form-control" id="productDescription" name="productDescription" rows="3"
                                 required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="productTitle" class="form-label">Stock Quantity</label>
+                            <input type="text" class="form-control" id="productTitle" name="productTitle" required>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit Product</button>
                     </form>
@@ -237,22 +253,26 @@
             <div class="row g-5">
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
                     <i class="fa fa-users fa-3x text-white mb-3"></i>
-                    <span class="fs-5 text-white">All industries / product covered</span>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">345</h1>
+                    <span class="fs-5 text-white">Happy Clients</span>
                     <hr class="bg-white w-25 mx-auto mb-0">
                 </div>
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
                     <i class="fa fa-check fa-3x text-white mb-3"></i>
-                    <span class="fs-5 text-white">Timely results</span>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">34</h1>
+                    <span class="fs-5 text-white">Projects Completed</span>
                     <hr class="bg-white w-25 mx-auto mb-0">
                 </div>
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
                     <i class="fa fa-users-cog fa-3x text-white mb-3"></i>
-                    <span class="fs-5 text-white">Dedicated staff for every project</span>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">50</h1>
+                    <span class="fs-5 text-white">Dedicated Staff</span>
                     <hr class="bg-white w-25 mx-auto mb-0">
                 </div>
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
                     <i class="fa fa-award fa-3x text-white mb-3"></i>
-                    <span class="fs-5 text-white">Quality assurance</span>
+                    <h1 class="display-4 text-white" data-toggle="counter-up">12</h1>
+                    <span class="fs-5 text-white">Awards Achieved</span>
                     <hr class="bg-white w-25 mx-auto mb-0">
                 </div>
             </div>
@@ -329,7 +349,7 @@
                             </p>
                             <h1 class="display-5 mb-5">Request A Call-Back</h1>
                         </div>
-                        <form action="https://formsubmit.co/bhatiasakshi60@gmail.com" method="post">
+                        <form action="https://formsubmit.co/info@tspglobal.com" method="post">
                             <div class="row g-3">
                                 <div class="col-sm-6">
                                     <div class="form-floating">
