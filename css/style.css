@@ -5,6 +5,9 @@
     --light: #150908;
     --dark: #410101;
 }
+h4{
+    color: #FFFFFF;
+}
 .btn-primary1{
     background-color: #FFFFFF;
     border: #FFFFFF;
